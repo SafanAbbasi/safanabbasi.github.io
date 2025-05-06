@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/contact.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -31,7 +32,29 @@
 							</ul>
 						</nav>
 					</header>
-
+				<!-- Contact Form -->
+					<section id="contact">
+						<h2>Contact Me</h2>
+						<form method="post" action="https://formspree.io/f/your-form-id">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" placeholder="Your Name" required />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" placeholder="Your Email" required />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" placeholder="Your Message" rows="4" required></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="primary" /></li>
+							</ul>
+						</form>
+					</section>
 				<!-- Footer -->
 					<footer id="footer">
 						<span class="copyright">&copy; 2025, Safan Abbasi 	Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
