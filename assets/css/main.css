@@ -571,7 +571,7 @@ input, select, textarea {
 		}
 
 		#header h3 {
-			font-size: 1.75em !important; /* Add size */
+			font-size: 2.0em !important; /* Add size */
 			font-weight: 500 !important;  /* Need this to override body's !important */
 			letter-spacing: -0.025em;
 			color: rgba(255, 255, 255, 1);
@@ -581,7 +581,6 @@ input, select, textarea {
 			color: rgba(255, 255, 255, 1);  /* Full white instead of semi-transparent */
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
-			/* opacity: 0.75; */
 		}
 
 		#header nav {
