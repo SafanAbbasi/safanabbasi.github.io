@@ -548,7 +548,7 @@ input, select, textarea {
 		opacity: 0;
 		position: relative;
 		text-align: center;
-		top: -1em;
+		top: -4em;  /* Change from -1em to move it higher */
 		vertical-align: middle;
 		width: 90%;
 	}
@@ -560,10 +560,28 @@ input, select, textarea {
 			line-height: 1em;
 		}
 
+		
+		/* Add this new style for h2 */
+		#header h2 {
+			font-size: 2.25em;
+			font-weight: 600;
+			letter-spacing: -0.025em;
+			line-height: 1.25em;
+			margin: 0.5em 0;
+		}
+
+		#header h3 {
+			font-size: 1.75em !important; /* Add size */
+			font-weight: 500 !important;  /* Need this to override body's !important */
+			letter-spacing: -0.025em;
+			color: rgba(255, 255, 255, 1);
+		}
+
 		#header p {
+			color: rgba(255, 255, 255, 1);  /* Full white instead of semi-transparent */
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+			/* opacity: 0.75; */
 		}
 
 		#header nav {
