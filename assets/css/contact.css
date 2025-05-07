@@ -87,18 +87,18 @@
 /* Make placeholder text more visible */
 #contact input::placeholder,
 #contact textarea::placeholder {
-    color: rgba(255, 255, 255, 0.6); /* Light gray with 60% opacity */
+    color: rgba(255, 255, 255, 0.8); /* Light gray with 60% opacity */
 }
 
 /* Style for Firefox */
 #contact input::-moz-placeholder,
 #contact textarea::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
     opacity: 1;
 }
 
 /* Style for Edge/IE */
 #contact input:-ms-input-placeholder,
 #contact textarea:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
 }
