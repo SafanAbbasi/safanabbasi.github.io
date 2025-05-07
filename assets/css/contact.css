@@ -1,5 +1,7 @@
 /* Contact Section */
-
+#bg, #overlay {
+    display: none;
+}
 #contact {
     position: relative;
     z-index: 10; /* Ensure it's above the background and overlay */
