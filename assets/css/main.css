@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("fontawesome-all.min.css");
+/* @import url("fontawesome-all.min.css"); */
 
 /*
 	Aerial by HTML5 UP
@@ -122,6 +122,10 @@ input, select, textarea {
 			border-color: transparent;
 		}
 
+	.rotate-left {
+		transform: rotate(-90deg);
+		display: inline-block; /* This ensures the rotation works properly */
+	}
 /* Icon */
 
 	.icon {
