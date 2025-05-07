@@ -36,26 +36,28 @@
 				<!-- Contact Form action="https://formspree.io/f/your-form-id"> -->
 				<!-- <p>The contact form is under construction. Please email me directly at <a href="mailto:safan.a.abbasi@gmail.com">safan.a.abbasi@gmail.com</a>.</p> -->
 				<section id="contact">
-						<h2>Contact Me</h2>
-						<form method="post" action="https://formspree.io/f/mpwdralv">
-							<div class="fields">
-								<div class="field">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" placeholder="Your Name" required />
-								</div>
-								<div class="field">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" placeholder="Your Email" required />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" placeholder="Your Message" rows="4" required></textarea>
-								</div>
+					<button class="close-button" onclick="toggleContact(event)">&times;</button>
+					<!-- ...rest of your form... -->
+					<h2>Contact Me</h2>
+					<form method="post" action="https://formspree.io/f/mpwdralv">
+						<div class="fields">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" placeholder="Your Name" required />
 							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="primary" /></li>
-							</ul>
-						</form>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" placeholder="Your Email" required />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" placeholder="Your Message" rows="4" required></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+						</ul>
+					</form>
 				</section>
 				<!-- Footer -->
 					<footer id="footer">
