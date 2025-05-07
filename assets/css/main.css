@@ -725,7 +725,20 @@ input, select, textarea {
 				#header nav a span {
 					display: none;
 				}
-
+				#header nav a:before {
+					background-color: rgba(0, 0, 0, 0.5); /* Add dark background */
+					border: solid 1px rgba(255, 255, 255, 0.7); /* Make border more visible */
+					color: white; /* white icon color with full opacity*/
+				}
+				
+				#header nav a:hover:before {
+					background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+					border-color: rgba(255, 255, 255, 0.9);
+					color: white;
+					transform: scale(1.1); /* Slight grow effect */
+					/* transition: all 0.2s ease; */
+				}
+			
 /* Footer */
 
 	#footer {
