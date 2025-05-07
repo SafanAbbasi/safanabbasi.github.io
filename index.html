@@ -29,6 +29,7 @@
 								<li><a href="https://linkedin.com/in/safanabbasi" target="blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/SafanAbbasi" target="blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">Github</span></a></li>
 								<li><a href="mailto:safan.a.abbasi@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="#" onclick="toggleContact(event)" class="icon solid fa-paper-plane"><span class="label">Contact</span></a></li>
 							</ul>
 						</nav>
 					</header>
@@ -36,7 +37,7 @@
 				<!-- <p>The contact form is under construction. Please email me directly at <a href="mailto:safan.a.abbasi@gmail.com">safan.a.abbasi@gmail.com</a>.</p> -->
 				<section id="contact">
 						<h2>Contact Me</h2>
-						<form method="post" action="#">
+						<form method="post" action="https://formspree.io/f/mpwdralv">
 							<div class="fields">
 								<div class="field">
 									<label for="name">Name</label>
@@ -64,9 +65,18 @@
 			</div>
 		</div>
 		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.onload = function() { 
+				document.body.classList.remove('is-preload');
+				document.getElementById('contact').style.display = 'none'; // Initialize contact form as hidden
+			}
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+
+			function toggleContact(event) {
+				event.preventDefault();
+				const contact = document.getElementById('contact');
+				contact.style.display = contact.style.display === 'none' ? 'block' : 'none';
+    		}
 		</script>
 	</body>
 </html>
