@@ -28,8 +28,9 @@
 							<ul>
 								<li><a href="https://linkedin.com/in/safanabbasi" target="blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/SafanAbbasi" target="blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:safan.a.abbasi@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="#" onclick="toggleContact(event)" class="icon solid fa-paper-plane"><span class="label">Contact</span></a></li>
+								<li><a href="https://safanabbasi.com/resume.pdf" target="blank" rel="noopener noreferrer" class="icon solid fa-file"><span class="label">Resume</span></a></li>
+								<!-- Remove email button since contact form will handle communication -->
+								<li><a href="#" onclick="toggleContact(event)" class="icon solid fa-paper-plane" title="Contact Form"><span class="label">Contact</span></a></li>
 							</ul>
 						</nav>
 					</header>
@@ -69,7 +70,7 @@
 		<script>
 			window.onload = function() { 
 				document.body.classList.remove('is-preload');
-				document.getElementById('contact').style.display = 'block'; // Initialize contact form as hidden
+				document.getElementById('contact').style.display = 'hidden'; // Initialize contact form as hidden
 			}
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
