@@ -7,12 +7,12 @@
     padding: 1em;
     width: 90%;
     max-width: 500px;
-    background: rgba(0, 0, 0, 0.7); /* Match the form's background */
+    background: rgb(40, 40, 40); /* Match the form's background */
 }
 
 #contact form {
     backdrop-filter: blur(15px); /* Increase blur */
-    background: rgba(0, 0, 0, 0.5); /* Darker background */
+    background: rgba(0, 0, 0, .4); /* Darker background */
     padding: 2em;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
