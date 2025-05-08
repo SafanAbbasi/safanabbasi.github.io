@@ -9,6 +9,7 @@
 		<title>Safan Abbasi's Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Safan Abbasi's personal website. Software Engineer, NASA Patent Co-Inventor, AI & Cloud Computing specialist.">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/contact.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer"> <!-- And the CDN sends the correct Access-Control-Allow-Origin: * header. -->
@@ -39,10 +40,8 @@
 						</nav>
 					</header>
 				<!-- Contact Form action="https://formspree.io/f/your-form-id"> -->
-				<!-- <p>The contact form is under construction. Please email me directly at <a href="mailto:safan.a.abbasi@gmail.com">safan.a.abbasi@gmail.com</a>.</p> -->
 				<section id="contact">
 					<button class="close-button" onclick="toggleContact(event)">&times;</button>
-					<!-- ...rest of your form... -->
 					<h2>Contact Me!</h2>
 					<form method="post" action="https://formspree.io/f/mpwdralv">
 						<div class="fields">
@@ -61,7 +60,7 @@
 							</div>
 						</div>
 						<ul class="actions">
-							<li><input type="submit" value="Send Message!" class="primary" /></li>
+							<li><input type="submit" value="Send Message!" class="primary"  id="submit-btn"/></li>
 						</ul>
 					</form>
 				</section>
@@ -77,10 +76,10 @@
 				document.body.classList.remove('is-preload');
 				document.getElementById('contact').style.display = 'none'; // Initialize contact form as hidden
 			}
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			window.ontouchmove = function() { return false; } // disable scrolling on touch devices
+			window.onorientationchange = function() { document.body.scrollTop = 0; } // scroll to top on orientation change
 
-			function toggleContact(event) {
+			function toggleContact(event) {  // Hide/Show contact form
 				event.preventDefault();
 				const contact = document.getElementById('contact');
 				contact.style.display = contact.style.display === 'none' ? 'block' : 'none';
@@ -104,6 +103,14 @@
 				} else {
 					emailError.textContent = "";
 					emailError.style.display = "none";
+				}
+			});
+
+			// Add this inside your <script> tag
+			document.addEventListener('keydown', function(e) {
+				const contact = document.getElementById('contact');
+				if (e.key === "Escape" && contact.style.display === 'block') {
+					contact.style.display = 'none';
 				}
 			});
 
