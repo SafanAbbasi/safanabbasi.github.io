@@ -5,14 +5,13 @@ Welcome to my personal website! This is a single-page, responsive landing page t
 ## 🚀 Features
 
 
-- **Quick Links:**  
+- **🔗 Quick Links:**
   - [LinkedIn](https://linkedin.com/in/safanabbasi)  
-  - [Resume (PDF)](docs/Resume.pdf)  
-  - [Contact Form](#contact)  
+  - [Resume (PDF)](docs/Resume.pdf)   
   - [NASA Patent](https://patents.google.com/patent/US12174259B1/en?oq=12174259)  
   - [GitHub](https://github.com/SafanAbbasi)
 
-Feel free to connect or reach out using the links above!
+Feel free to connect via LinkedIn or use the Contact Form (paper plane icon) on the main page to send me a message directly!
 
 - **Animated Background:**  
   Eye-catching, CSS-animated background inspired by the Aerial template from HTML5 UP.
