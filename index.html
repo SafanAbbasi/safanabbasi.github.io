@@ -51,6 +51,11 @@
 					<button class="close-button">&times;</button>
 					<h2>Contact Me!</h2>
 					<form method="post" action="https://formspree.io/f/mpwdralv">
+						    <!-- Honeypot field: hidden from users -->
+						<div style="display:none;">
+							<label for="website">Website</label>
+							<input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+						</div>
 						<div class="fields">
 							<div class="field">
 								<label for="name">Name</label>
