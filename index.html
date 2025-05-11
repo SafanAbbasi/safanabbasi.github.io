@@ -24,6 +24,9 @@
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
+			<button id="theme-toggle" title="Toggle dark/light mode" style="margin-bottom:1em;">🌙
+				<span class="toggle-label">Light/Dark</span>
+			</button>
 			<div id="bg"></div>
 			<div id="overlay"></div>
 			<main id="main">
@@ -98,7 +101,25 @@
 			const emailError = document.getElementById('email-error');
 			const form = emailInput.closest('form');
 			const submitBtn = document.getElementById('submit-btn');
-
+			
+			// Theme toggle logic
+			const themeToggle = document.getElementById('theme-toggle');
+			const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const savedTheme = localStorage.getItem('theme');
+			if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+				document.body.classList.add('dark-mode');
+				themeToggle.textContent = '🌞';
+			}
+			themeToggle.addEventListener('click', function() {
+				document.body.classList.toggle('dark-mode');
+				if (document.body.classList.contains('dark-mode')) {
+					localStorage.setItem('theme', 'dark');
+					themeToggle.textContent = '🌞';
+				} else {
+					localStorage.setItem('theme', 'light');
+					themeToggle.textContent = '🌙';
+				}
+			});
 			// Add event listener for the close button
 			document.querySelector('.close-button').addEventListener('click', toggleContact);
 
