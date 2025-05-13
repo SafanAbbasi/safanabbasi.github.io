@@ -1,8 +1,9 @@
 # Safan Abbasi's Personal Website
 
-Welcome to my personal website! This is a single-page, responsive landing page to showcase my work, connect with me, and share my background as a Software Engineer and NASA Patent Co-Inventor.
-
 ![Build Status](https://github.com/SafanAbbasi/safanabbasi.github.io/actions/workflows/deploy.yml/badge.svg)
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+
+Welcome to my personal website! This is a single-page, responsive landing page to showcase my work, connect with me, and share my background as a Software Engineer and NASA Patent Co-Inventor.
 
 ## 🚀 Features
 
