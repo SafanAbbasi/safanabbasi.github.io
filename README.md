@@ -2,6 +2,8 @@
 
 Welcome to my personal website! This is a single-page, responsive landing page to showcase my work, connect with me, and share my background as a Software Engineer and NASA Patent Co-Inventor.
 
+![Build Status](https://github.com/SafanAbbasi/safanabbasi.github.io/actions/workflows/deploy.yml/badge.svg)
+
 ## 🚀 Features
 
 
@@ -36,5 +38,3 @@ Welcome to my personal website! This is a single-page, responsive landing page t
 
 This website and its content are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).  
 See [LICENSE.MD](LICENSE.MD) for details.
-
-![Build Status](https://github.com/SafanAbbasi/safanabbasi.github.io/actions/workflows/deploy.yml/badge.svg)
