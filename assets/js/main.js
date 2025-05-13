@@ -1,3 +1,8 @@
+// redirect to non-www version of the site if the current hostname is www.safanabbasi.com. Github Pages handles this but still adding for consistency.
+if (window.location.hostname === "www.safanabbasi.com") {
+    window.location.href = "https://safanabbasi.com" + window.location.pathname + window.location.search;
+  }
+
 window.onload = function() { 
     document.body.classList.remove('is-preload');
     document.getElementById('contact').style.display = 'none'; // Initialize contact form as hidden
