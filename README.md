@@ -36,3 +36,5 @@ Welcome to my personal website! This is a single-page, responsive landing page t
 
 This website and its content are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).  
 See [LICENSE.MD](LICENSE.MD) for details.
+
+![Build Status](https://github.com/yourusername/yourrepo/actions/workflows/deploy.yml/badge.svg)
