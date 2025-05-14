@@ -367,6 +367,12 @@ input, select, textarea {
 		width: 100%;
 	}
 
+	/* Make the "Let's Connect!" text bigger */
+#header .connect-title {
+		font-size: 1.75em;
+		font-weight: 500;
+		margin: .5em 0 0em 0;
+	}
 /* Main */
 
 	#main {
